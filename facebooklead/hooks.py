@@ -10,6 +10,15 @@ app_license = "mit"
 
 # required_apps = []
 
+
+ignore_csrf = ["facebooklead.fb_leads.fb_lead_webhook"]
+
+scheduler_events = {
+    "weekly": [
+        "facebooklead.fb_leads.keepalive_token"
+    ]
+}
+
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
