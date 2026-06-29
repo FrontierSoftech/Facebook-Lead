@@ -14,3 +14,11 @@ app_license = "mit"
 doctype_js = {
     "Lead Sync Source": "public/js/lead_sync_source.js"
 }
+
+scheduler_events = {
+    "cron": {
+        "0 * * * *": [
+            "facebooklead.fb_refresh.refresh_all_facebook_forms_daily"
+        ]
+    }
+}
