@@ -16,7 +16,7 @@ def refresh_facebook_forms(source_name: str):
 
 
 def refresh_all_facebook_forms_daily():
-    """Scheduler — runs daily for every enabled Facebook source."""
+    """Scheduler — runs for every enabled Facebook source."""
     sources = frappe.get_all(
         "Lead Sync Source",
         filters={"enabled": 1, "type": "Facebook"},
