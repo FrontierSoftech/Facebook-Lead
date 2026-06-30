@@ -18,7 +18,7 @@ doctype_js = {
 scheduler_events = {
     "cron": {
         "0 * * * *": [
-            "facebooklead.fb_refresh.refresh_all_facebook_forms_daily"
+            "facebooklead.fb_refresh.refresh_all_facebook_forms"
         ]
     }
 }
